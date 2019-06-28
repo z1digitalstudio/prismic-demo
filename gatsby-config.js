@@ -37,6 +37,14 @@ module.exports = {
         htmlSerializer: () => prismicHtmlSerializer,
       },
     },
+    {
+      resolve: 'gatsby-plugin-prismic-preview',
+      options: {
+        repositoryName: 'z1-prismic-demo',
+        linkResolver: () => prismicLinkResolver,
+        path: '/preview',
+      }
+    },
     'gatsby-plugin-lodash',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
